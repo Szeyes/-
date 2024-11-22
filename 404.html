@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 页面未找到</title>
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333;
+        }
+
+        /* 容器样式 */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 120px;
+            margin: 0;
+            color: #ff6b6b;
+            animation: fadeInDown 1s ease forwards;
+        }
+
+        /* 副标题样式 */
+        h2 {
+            font-size: 28px;
+            margin: 20px 0;
+            animation: fadeInUp 1.5s ease forwards;
+        }
+
+        /* 描述文本样式 */
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            animation: fadeInUp 2s ease forwards;
+        }
+
+        /* 按钮样式 */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #ff6b6b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 2.5s ease forwards;
+        }
+
+        .btn:hover {
+            background-color: #ff4757;
+        }
+
+        /* 动画效果 */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 80px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>抱歉，页面未找到</h2>
+        <p>您访问的页面不存在或已被移动。请检查URL或返回首页。</p>
+        <a href="/" class="btn">返回首页</a>
+    </div>
+</body>
+</html>
